@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.cdnfonts.com/css/squada-one" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
+
+    <!-- link to script.js file -->
+    <script src="./script.js"></script>
+
+    <title>WHAT2EAT</title>
+</head>
+
+
+<body>
+    <!-- Header Section -->
+    <header>
+    <div class="container-fluid" style="background-color: #1AC073;  display: inline-block;">
+        <div class="container p-0">
+            <!-- Menu section (nav) -->
+            <section id="menu-section-frame" class="p-0 m-0">
+                <div class="row p-0 m-0" id="menu-section-nav" style="margin: auto;">
+                    <!-- NavBar - Page Name -->
+                    <div class="col-sm-12 col-lg-2 my-2 text-left d-flex justify-content-start mx-0 px-0"
+                        id="nav-bar-page-name">
+                        WHAT2EAT</div>
+                    <!-- NavBar - menu link -->
+                    <div id="nav-bar-menu-link" class="d-flex justify-content-between col-sm-7 col-lg-5 my-2 mx-0"
+                        style="left: -15px">
+                        <div class="main-menu " id="main-menu-home"> <a href="#">Home</a></div>
+                            <div class="main-menu " id="main-menu-about"><a href="#">About</a></div>
+                            <div class="main-menu " id="main-menu-menu"><a href="../menu/menupage.html">Menu</a></div>
+                            <div class="main-menu " id="main-menu-blog"><a href="#">Blog</a></div>
+                            <div class="main-menu " id="main-menu-contact"><a href="#">Contact</a></div>
+                    </div>
+                    <!-- NavBar - search and cart -->
+                    <div id="nav-bar-search-cart" class="d-flex justify-content-between col-sm-1 col-lg-1 my-2"
+                        style="left: -15px">
+                        <a href="" id="nav-bar-search-icon" class="mr-2"><img src="images/Cardsearch.png" alt=""></a>
+                        <a href="" id="nav-bar-cart-icon" class="ml-2"><img src="images/Cardcart.png" alt=""></a>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Hero & Image -->
+            <section class="row py-5 my-5  d-flex justify-content-between" style="margin: auto;">
+                <!-- hero -->
+                <div class="col-lg-5 col-sm-12 d-flex flex-column justify-content-center p-0 m-0"
+                    id="hero-section-frame">
+                    <div class="d-flex flex-column justify-content-around" style="height: 317px;">
+                        <div id="hero-text-display" class="d-flex flex-column justify-content-between"
+                            style="height: 219px; ">
+                            <div class="hero-section-title">Authentic Home food in UK</div>
+                            <div class="hero-section-subtitle">What2Eat is a courier service in which authentic home
+                                cook food is delivered to a customer.</div>
+                        </div>
+                        <div id="hero-search-input" class="d-flex justify-content-start">
+                            <input class="col-7 bg-white border-0 p-3 rounded-left form"
+                                placeholder="Search food you love" style="outline: none; "></input>
+                            <div class="col-3 hero-section-button p-3 rounded-right">Search</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- image -->
+                <div class="col-lg-5 col-sm-12" id="man-cooking-section-frame">
+                    <img style="width: 100%; height: auto;" src="./images/cooking.man.header.png" alt="">
+                </div>
+
+            </section>
+        </div>
+    </div>
+</header>
+    <!-- Kitchen Section -->
+
+    <div class="container-fluid" style="height: fit-content; width: 100%; background-color: #F7F8FA;
+ ; display: inline-block;">
+        <div class="kitchen container my-5 px-0">
+            <!-- filter menu -->
+            <div id="kitchen-filter-frame" class="d-flex flex-column justify-content-around">
+                <div class="filter-header">
+                    Home Kitchen
+                </div>
+                <div class="filter-menu ">
+
+                    <div class="row d-flex justify-content-equal  my-3 btn-group mx-0">
+                        <div class="btn  radius-left p-2" id="filter-all">All</div>
+                        <div class="btn  p-2" id="filter-button">Button</div>
+                        <div class="btn  p-2" id="filter-freeDelivery">Free delivery</div>
+                        <div class="btn  p-2" id="filter-new">New</div>
+                        <div class="btn  radius-right p-2" id="filter-coming">Coming</div>
+
+                    </div>
+                </div>
+                <div class="filter-dropdown-menu">
+                    <select name="" id="select-filter" class="btn dropdown-toggle p-2 px-3">
+                        <option value="" class="dropdown-item ">Filters</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- card menu -->
+            <div id="kitchen-cards-home" class="my-5 mx-0">
+                <div class="row mb-3 d-flex justify-content-start"
+                    style="flex-flow: row wrap; flex-wrap: wrap; flex-shrink: 1; margin: auto;">
+                    <!-- card 1 -->
+                    <div class="my-2 col-xl-3 col-lg-4 col-md-6 " style="min-width: 0;">
+                        <div class=" kitchen card px-0 mx-0">
+                            <img src="./images/pizza-test.jpg" alt="">
+                            <!-- product card detail -->
+                            <div id="product-card-detail"
+                                class=" pt-3 d-flex flex-grow flex-column justify-content-start ">
+                                <!-- row1 -->
+                                <div class=" mx-3 mb-3 d-flex justify-content-between ">
+                                    <div class="title">Homemade Pizza</div>
+                                    <div class="price">$ 10</div>
+                                </div>
+                                <!-- row2 -->
+                                <div class=" mx-3 d-flex justify-content-between">
+                                    <div class="rating-and-timing d-flex">
+                                        <div class="rating mr-2">
+                                            <img src="./images/ant-design_star-filledstar.png" style="width: 16px;
+                                            height: 16px;" alt="">
+                                            <span>4.7</span>
+                                        </div>
+                                        <div class="timing">
+                                            50-79 min
+                                        </div>
+                                    </div>
+                                    <!-- add -->
+                                    <div class="plus-slect"><img src="./images/Cardaddplus.png" alt="" style="width: 20px;
+                                        height: 22px;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- loadmore button -->
+
+            <div class="btn" id="kitchen-load-more-btn"><span>+ Load more...</span></div>
+        </div>
+
+    </div>
+
+    <!-- Blog Section -->
+
+    <div class="container-fluid" style="height: fit-content; width: 100%;  display: inline-block;">
+        <div class="container my-5 px-0">
+            <div id="blog-page-title" class="px-2 my-3">Our Blog</div>
+            <!-- Blog cards -->
+            <div id="blog-cards-frame">
+                <div class="row d-flex flex-wrap" style="margin: auto; box-sizing: border-box;">
+                    <!-- left blog part -->
+                    <div class="col-lg-3 col-md-4 left">
+                        <div class="row">
+                            <!-- start a blog card -->
+                            <div class="col-12 blog card m-2">
+
+                                <div class="row" style=" margin: auto;">
+                                    <div alt="" class="col img"></div>
+                                    <div id="blog-card-detail" class="col-sm-6 col-md-12 py-3">
+                                        <div class="title">Most Satisfying Cake decorating
+                                            Cake ideas </div>
+                                        <div class="description">Quis hendrerit nibh mauris sed faucibus.
+                                            Quis hendrerit nibh mauris sed faucibus.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end a blog card -->
+                            <!-- start a blog card -->
+                            <div class="col-12 blog card m-2">
+
+                                <div class="row" style=" margin: auto;">
+                                    <div alt="" class="col img"></div>
+                                    <div id="blog-card-detail" class="col-sm-6 col-md-12 py-3">
+                                        <div class="title">Most Satisfying Cake decorating
+                                            Cake ideas </div>
+                                        <div class="description">Quis hendrerit nibh mauris sed faucibus.
+                                            Quis hendrerit nibh mauris sed faucibus.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end a blog card -->
+                        </div>
+                    </div>
+                    <!-- main blog part -->
+                    <div class="col-lg-6 col-md-8 main">
+                        <div class="row d-flex justify-content-center">
+                            <!-- start a blog card -->
+                            <div class="col-12 blog card m-2" id="main-blog-card">
+
+                                <div class="row" style=" margin: auto;">
+                                    <div alt="" class="col img" id="main-blog-img"></div>
+                                    <div id="blog-card-detail" class="col-sm-6 col-md-12 py-3">
+                                        <div class="title" id="main-blog-title">Most Satisfying Cake decorating
+                                            Cake ideas </div>
+                                        <div class="description" id="main-blog-description">Quis hendrerit nibh mauris
+                                            sed faucibus.
+                                            Quis hendrerit nibh mauris sed faucibus.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end a blog card -->
+                        </div>
+
+                    </div>
+                    <!-- right blog part -->
+                    <div class="col-lg-3 col-md-12 right">
+                        <div class="row">
+                            <!-- start a blog card -->
+                            <div class="col-12 blog card m-2">
+
+                                <div class="row" style=" margin: auto;">
+                                    <div alt="" class="col img"></div>
+                                    <div id="blog-card-detail" class="col-sm-6 col-md-12 py-3">
+                                        <div class="title">Most Satisfying Cake decorating
+                                            Cake ideas </div>
+                                        <div class="description">Quis hendrerit nibh mauris sed faucibus.
+                                            Quis hendrerit nibh mauris sed faucibus.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end a blog card -->
+                            <!-- start a blog card -->
+                            <div class="col-12 blog card m-2">
+
+                                <div class="row" style=" margin: auto;">
+                                    <div alt="" class="col img"></div>
+                                    <div id="blog-card-detail" class="col-sm-6 col-md-12 py-3">
+                                        <div class="title">Most Satisfying Cake decorating
+                                            Cake ideas </div>
+                                        <div class="description">Quis hendrerit nibh mauris sed faucibus.
+                                            Quis hendrerit nibh mauris sed faucibus.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end a blog card -->
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Us -->
+    <div class="container-fluid"
+        style="height: fit-content; width: 100%; background-color: #F7F8FA;  display: inline-block;">
+        <div class="container py-5 my-5 px-0 row d-flex flex-wrap justify-content-center" style="margin: auto;">
+            <!-- Form Contact Us -->
+            <div id="contact-form-frame" class="col-lg-6 d-flex flex-column justify-content-around my-3">
+                <!-- Contact title -->
+                <div id="contact-form-title">Do you have a question or want to become a seller?</div>
+                <div id="contact-form-note">Fill this form and our manager will contact you next 48 hours.</div>
+                <!-- Contact Form -->
+                <div class="row px-0 mx-0" id="contact-form-form">
+                    <div class="col-6 pl-0"><input style="height: 58px;" class=" form-control mx-0" type="text"
+                            placeholder="Your name"></div>
+                    <div class="col-6 pr-0"><input style="height: 58px;" class=" form-control mx-0" type="text"
+                            placeholder="Your e-mail"></div>
+                    <div class="col-12 p-0 mt-4"><textarea class="py-3 form-control mx-0" name="" id="" cols="30"
+                            rows="10" placeholder="Your message"></textarea></div>
+
+                </div>
+                <!-- Contact Send Button -->
+                <div id="contact-form-send-btn">Send Question </div>
+            </div>
+            <!-- Delivery man Photo -->
+            <div id="contact-form-image" class="col-lg-6 py-5">
+                <img src="./images/Food_delivery_man_riding_motorcycles.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small pt-4 container-fluid"
+        style="background-color: #1AC073;  display: inline-block;">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class=" d-flex justify-content-center flex-column align-items-center">
+
+                    <!-- Content -->
+                    <h5 class="text-uppercase">WHAT2EAT</h5>
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">Copyright @2023 What2Eat
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>
